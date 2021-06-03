@@ -1,0 +1,112 @@
+*{margin: 0;
+	padding: 0;
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background: -webkit-radial-gradient(#220000, #240000);
+}
+
+.letrero--contain span{
+	font-size: 120pt;
+	font-weight: 900;
+	position: relative;
+	top:25%;
+	font-family: 'Patrick hand';
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+}
+
+.letrero--contain span::before {
+	content: var(--l);
+	position: absolute;
+	transform: scale(1.1);
+	filter: blur(15px);
+}
+
+.letrero--contain span::after {
+	content: var(--l);
+	position: absolute;
+	top: 80%;
+	left: 0;
+	filter: blur(30px);
+	transform: rotateX(180deg);
+}
+
+/*
+.letrero--contain span:hover {
+	filter: contrast(250%);
+}*/
+
+.letrero--contain span:nth-child(1){
+	color: #00bef8; 
+	animation-name: titilar;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+
+.letrero--contain span:nth-child(2){
+	color: #ff0697;
+	animation-name: titilar;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+.letrero--contain span:nth-child(3){
+	color: #ff4d00;
+	animation-name: titilar;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+.letrero--contain span:nth-child(4){
+	color: #ffe600;
+	animation-name: titilar;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+.letrero--contain span:nth-child(5){
+	color: #ff00bb;
+	animation-name: titilar;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
+}
+
+@keyframes titilar{
+	0%{filter: contrast(100%);}
+	50%{filter: 200%;}
+	100%{filter: contrast(250%);}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
